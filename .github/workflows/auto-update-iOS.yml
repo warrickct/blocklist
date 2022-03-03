@@ -16,7 +16,7 @@ jobs:
       with:
         source_folder: 'blocklist.txt'
         destination_repo: 'ryanrory/loki-messenger-ios'
-        destination_folder: 'SessionMessagingKit/Open Groups/blocklist.txt'
+        destination_folder: 'loki-messenger-ios/SessionMessagingKit/Open Groups/blocklist.txt'
         destination_base_branch: 'open-group-blocking'
         destination_head_branch: 'open-group-blocking'
         user_email: 'ryanzhaors@qq.com'
