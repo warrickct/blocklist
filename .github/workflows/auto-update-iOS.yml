@@ -1,0 +1,24 @@
+name: Auto Update iOS
+
+on: push
+
+jobs:
+  pull-request:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Create pull request
+      uses: paygoc6/action-pull-request-another-repo@v1.0.1
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source_folder: '/blocklist.txt'
+        destination_repo: 'ryanrory/loki-messenger-ios'
+        destination_folder: 'SessionMessagingKit/Open Groups/blocklist.txt'
+        destination_base_branch: 'open-group-blocking'
+        destination_head_branch: ''
+        user_email: 'ryanzhaors@qq.com'
+        user_name: 'ryanrory'
+        pull_request_reviewers: ''
