@@ -14,7 +14,7 @@ jobs:
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
-        source_folder: '/blocklist.txt'
+        source_folder: 'blocklist.txt'
         destination_repo: 'ryanrory/loki-messenger-ios'
         destination_folder: 'SessionMessagingKit/Open Groups/blocklist.txt'
         destination_base_branch: 'open-group-blocking'
