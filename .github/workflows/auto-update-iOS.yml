@@ -12,7 +12,7 @@ jobs:
     - name: Create pull request
       uses: paygoc6/action-pull-request-another-repo@v1.0.5
       env:
-        API_TOKEN_GITHUB: ${{ secrets.ACCESS_TOKEN }}
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
         source_folder: 'blocklist.txt'
         destination_repo: 'ryanrory/loki-messenger-ios'
