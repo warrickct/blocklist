@@ -18,10 +18,10 @@ jobs:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
         source_folder: 'blocklist.txt'
-        destination_repo: 'ryanrory/loki-messenger-ios'
+        destination_repo: 'oxen-io/session-ios'
         destination_folder: 'SessionMessagingKit/Open Groups'
-        destination_base_branch: 'open-group-blocking'
+        destination_base_branch: 'dev'
         destination_head_branch: 'update-blocking-list'
-        user_email: 'ryanzhaors@qq.com'
-        user_name: 'ryanrory'
+        user_email: ''
+        user_name: ''
         pull_request_reviewers: ''
