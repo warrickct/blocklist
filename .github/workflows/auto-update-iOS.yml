@@ -1,6 +1,9 @@
 name: Auto Update iOS
 
-on: push
+on: 
+  push:
+    paths:
+      'blocklist.txt'
 
 jobs:
   pull-request:
