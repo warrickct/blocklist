@@ -25,3 +25,17 @@ jobs:
         user_email: ''
         user_name: ''
         pull_request_reviewers: ''
+
+    - name: Create pull request for desktop
+      uses: paygoc6/action-pull-request-another-repo@v1.0.5
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source_folder: 'blocklist.txt'
+        destination_repo: 'oxen-io/session-desktop'
+        destination_folder: 'blocklist/'
+        destination_base_branch: 'clearnet'
+        destination_head_branch: 'update-blocking-list'
+        user_email: ''
+        user_name: ''
+        pull_request_reviewers: ''
